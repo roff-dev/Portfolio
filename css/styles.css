@@ -12,19 +12,20 @@ body {
   margin-top: 0;
 }
 
-.nav-links {
-  display: flex;
-  justify-content: space-between;
-}
-.nav-links ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.navbar {
   width: 200px;
   height: 100vh;
   background-color: rgb(55, 61, 67);
 }
-.nav-links ul li a {
+.navbar .nav-links {
+  width: 200px;
+}
+.navbar .nav-links ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.navbar .nav-links ul li a {
   display: block;
   padding: 8px 16px;
   text-decoration: none;
@@ -32,27 +33,24 @@ body {
   line-height: 2em;
   text-align: center;
 }
-.nav-links ul li a:hover {
+.navbar .nav-links ul li a:hover {
   background-color: rgb(60, 79, 88);
   color: white;
 }
-
-.nav-logo {
+.navbar .nav-logo {
   width: 200px;
   height: 100px;
-  background-color: rgb(55, 61, 67);
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.nav-logo ul {
+.navbar .nav-logo ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  background-color: rgb(55, 61, 67);
   font-size: 50px;
 }
-.nav-logo ul li a {
+.navbar .nav-logo ul li a {
   display: block;
   text-decoration: none;
   color: white;

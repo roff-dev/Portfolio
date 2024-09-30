@@ -1,52 +1,57 @@
-.nav-links{ 
-    display: flex; 
-    justify-content: space-between; 
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        width: 200px;
-        height: 100vh;
-        background-color: $color-secondary;
-        
-        li a {
-            display: block;
-            padding: 8px 16px;
-            text-decoration: none;
-            color: white;
-            line-height: 2em;
-            text-align: center;
-        }
-        
-        li a:hover {
-            background-color: $color-accent;
-            color: white;
-        }
-        
-    }
-}
-.nav-logo {
+.navbar {
     width: 200px;
-    height: 100px;
+    height: 100vh;
     background-color: $color-secondary;
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
     
+    .nav-links{ 
+        width: 200px;
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
 
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        background-color: $color-secondary;
-        font-size: 50px;
+            li a {
+                display: block;
+                padding: 8px 16px;
+                text-decoration: none;
+                color: white;
+                line-height: 2em;
+                text-align: center;
+            }
+            
+            li a:hover {
+                background-color: $color-accent;
+                color: white;
+            }
+            
+        }
+    }
+    .nav-logo {
+        width: 200px;
+        height: 100px;
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
         
-        li a {
-            display: block;
-            text-decoration: none;
-            color: white;
-            line-height: 2em;
-            text-align: center;
+    
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            font-size: 50px;
+            
+            li a {
+                display: block;
+                text-decoration: none;
+                color: white;
+                line-height: 2em;
+                text-align: center;
+            }
         }
     }
 }
+
+
+
+
+
