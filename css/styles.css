@@ -72,6 +72,48 @@ body {
   color: white;
 }
 
+@media (min-width: 768px) {
+  .container {
+    width: calc(100% - 200px);
+    float: right;
+  }
+  .navbar {
+    width: 200px;
+    height: 100vh;
+    background-color: rgb(55, 61, 67);
+    float: left;
+    position: fixed;
+    z-index: 2;
+  }
+  .nav-links, .nav-logo {
+    width: 200px;
+  }
+  .nav-links ul, .nav-logo ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .nav-logo ul:first-child {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 2em;
+  }
+  .nav-links li a, .nav-logo li a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: white;
+    line-height: 2em;
+    text-align: center;
+  }
+  .nav-links li a:hover {
+    background-color: rgb(60, 79, 88);
+    color: white;
+  }
+  .content {
+    margin-left: 200px;
+  }
+}
 .hero {
   position: relative;
   width: 100%;
