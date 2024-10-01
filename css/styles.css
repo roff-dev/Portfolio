@@ -1,60 +1,18 @@
-/* SCSS HEX */
-/* SCSS HSL */
-/* SCSS RGB */
-/* SCSS Gradient */
-/*=================================================================
-MIXINS
-===================================================================*/
-body {
-  color: white;
-  background: url("../../img/hero-image.jpg");
-  background-repeat: no-repeat;
-  background-size: 100vw 100vh;
-  background-color: rgb(73, 70, 79);
-  margin-left: 0;
-  margin-top: 0;
-}
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 2 | @import 'hero';
+ *   |         ^^^^^^
+ *   '
+ *   scss\modules\_index.scss 2:9  @import
+ *   scss\styles.scss 4:9          root stylesheet */
 
-.navbar {
-  width: 200px;
-  height: 100vh;
-  background-color: rgb(55, 61, 67);
-  float: left;
-  position: fixed;
-}
-
-.nav-links, .nav-logo {
-  width: 200px;
-}
-
-.nav-links ul, .nav-logo ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-logo ul:first-child {
-  padding-top: 25px;
-  padding-bottom: 25px;
-  font-size: 3em;
-}
-
-.nav-links li a, .nav-logo li a {
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
   display: block;
-  padding: 8px 16px;
-  text-decoration: none;
-  color: white;
-  line-height: 2em;
-  text-align: center;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 2 \2502  @import 'hero';\a   \2502          ^^^^^^\a   \2575 \a   scss\\modules\\_index.scss 2:9  @import\a   scss\\styles.scss 4:9          root stylesheet";
 }
-
-.nav-links li a:hover {
-  background-color: rgb(60, 79, 88);
-  color: white;
-}
-
-.content {
-  margin-left: 200px;
-}
-
-/*# sourceMappingURL=styles.css.map */
