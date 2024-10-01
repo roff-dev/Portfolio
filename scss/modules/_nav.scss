@@ -1,42 +1,87 @@
-.navbar {
-    width: 200px;
-    height: 100vh; 
-    background-color: $color-secondary;
-    float: left; 
-    position: fixed;
-}
 
-.nav-links, .nav-logo {
-    width: 200px;
-}
-
-.nav-links ul, .nav-logo ul {
+.nav-links ul, .nav-logo ul, .socials ul {
     list-style-type: none;
-    margin: 0;
     padding: 0;
 }
-
-.nav-logo ul:first-child {
-    padding-top: 25px;
-    padding-bottom: 25px;
-    font-size: 3em;
+.nav-links {
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center; 
+}
+.nav-links li, .nav-logo li {
+    display: flex; 
+    justify-content: center; 
+}
+.socials {
+    display: flex; 
+    justify-content: center; 
+    padding-bottom: 20px;
 }
 
-.nav-links li a, .nav-logo li a {
-    display: block;
+.socials ul {
+    display: flex; 
+    padding: 0; 
+    margin: 0; 
+    list-style-type: none;
+}
+
+
+.nav-links li a, .nav-logo li a, .socials li a {
+    
     padding: 8px 16px;
     text-decoration: none;
     color: white;
-    line-height: 2em;
-    text-align: center;
-}
+    line-height: 1.2em;
+    
 
-.nav-links li a:hover {
+}
+   
+.nav-links li:hover {
     background-color: $color-accent;
     color: white;
 }
 
-.content {
-    margin-left: 200px; 
+
+// .navbar {
+//     width: 200px;
+//     height: 100vh; 
+//     background-color: $color-secondary;
+//     float: left; 
+//     position: fixed;
+// }
+
+// .nav-links, .nav-logo {
+//     width: 200px;
+// }
+
+// .nav-links ul, .nav-logo ul {
+//     list-style-type: none;
+//     margin: 0;
+//     padding: 0;
+// }
+
+// .nav-logo ul:first-child {
+//     padding-top: 25px;
+//     padding-bottom: 25px;
+//     font-size: 3em;
+// }
+
+// .nav-links li a, .nav-logo li a {
+//     display: block;
+//     padding: 8px 16px;
+//     text-decoration: none;
+//     color: white;
+//     line-height: 2em;
+//     text-align: center;
+// }
+
+// .nav-links li a:hover {
+//     background-color: $color-accent;
+//     color: white;
+// }
+
+// .content {
+//     margin-left: 200px; 
     
-}
+// }
