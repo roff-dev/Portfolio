@@ -8,27 +8,95 @@
     <title>K O Portfolio</title>
 </head>
 <body>
-    <div class="navbar">
+    <div class="navbar" id="back-to-top">
         <div class="nav-logo">
             <ul>
-                <li><a href="#">K O</a></li>
+                <li><a href="index.html"><span class="icon-keyboard_arrow_left"></span> K O <span class="icon-keyboard_arrow_right"></span></a></li>
             </ul>
         </div>
         <div class="nav-links">
             <ul>
                 <li><a href="#">About Me</a></li>
-                <li><a href="#">My Portfolio</a></li>
+                <li><a href="#portfolio">My Portfolio</a></li>
                 <li><a href="#">Coding Examples</a></li>
                 <li><a href="#">SCS Scheme</a></li>
-                <li><a href="#">Contact Me</a></li>
-                <li><a href="#"><span class="icon-linkedin"></span></a></li>
-                <li><a href="#"><span class="icon-github"></span></a></li>
+                <li><a href="#get-in-touch">Contact Me</a></li>
+            </ul>
+        </div>
+        <div class="socials">
+            <ul>
+                <li><a href="https://www.linkedin.com/in/kieron-oates-b061b3317/" target="_blank"><span class="icon-linkedin"></span></a></li>
+                <li><a href="https://github.com/roff-dev" target="_blank"><span class="icon-github"></span></a></li>
             </ul>
         </div>
     </div>
-    <div class="content">
-
+    <div class="container">
+    <div class="hero">
+        <img src="img/hero-image.jpg" alt="">
+        <h1>Kieron Oates</h1>
+        <h2>Web Developer</h2>
+        <div class="scroll-down">
+            Scroll to learn about me!
+            <span class="icon-arrow-down"></span>
+        </div>
     </div>
-    
+
+
+    <div class="projects" id="portfolio">
+        <div class="project-box">
+            <img src="img/project1.png" alt="">
+            <h3>Project 1</h3>
+            <a href="#">See Project</a>
+        </div>
+        <div class="project-box">
+            <img src="img/project1.png" alt="Second Project">
+            <h3>Project 2</h3>
+            <a href="#">See Project</a>
+        </div>
+        <div class="project-box">
+            <img src="img/project1.png" alt="Third Project">
+            <h3>Project 3</h3>
+            <a href="#">See Project</a>
+        </div>
+        <div class="project-box">
+            <img src="img/project1.png" alt="">
+            <h3>Project 4</h3>
+            <a href="#">See Project</a>
+        </div>
+        <div class="project-box">
+            <img src="img/project1.png" alt="Second Project">
+            <h3>Project 5</h3>
+            <a href="#">See Project</a>
+        </div>
+        <div class="project-box">
+            <img src="img/project1.png" alt="Third Project">
+            <h3>Project 6</h3>
+            <a href="#">See Project</a>
+        </div>
+    </div>
+
+    <div class="get-in-touch" id="get-in-touch">
+        <div class="git-info">
+            <h2>Get in Touch</h2>
+            <p>Contact me via the form below.</p>
+        </div>
+        <div class="git-form">
+            <form>
+                <div class="form-row">
+                    <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
+                    <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+                </div>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <textarea id="message" name="message" placeholder="Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="back-to-top">
+        <span class="icon-arrow-up"></span>
+        <a href="#top">Back to top!</a>
+    </div>
+    </div>
 </body>
 </html>

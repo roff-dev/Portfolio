@@ -1,0 +1,54 @@
+.hero {
+    position: relative;
+    width: 100%;
+    height: 70vh; 
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.hero h1, .hero h2 {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); 
+}
+
+.hero h1 {
+    top: 50%;
+    transform: translateY(-60%); 
+    margin: 0;
+    font-size: 4em; 
+}
+
+
+.hero h2 {
+    top: 60%;
+    transform: translateY(-60%); 
+    margin: 0;
+    font-size: 2em; 
+}
+.scroll-down {
+    position: absolute;
+    bottom: 10px; 
+    width: 100%;
+    text-align: center;
+    font-size: 1.35em; 
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    cursor: pointer; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.scroll-down .icon-arrow-down {
+    margin-top: 5px; 
+    font-size: 1.5em; 
+}
+
