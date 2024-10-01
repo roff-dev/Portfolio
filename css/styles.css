@@ -17,6 +17,19 @@ body {
   margin: 0;
 }
 
+.back-to-top a, .back-to-top span {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-size: 1.35em;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
 .nav-links ul, .nav-logo ul, .socials ul {
   list-style-type: none;
   padding: 0;
@@ -161,6 +174,73 @@ body {
 .projects .project-box:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.get-in-touch {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+}
+
+.git-info, .git-form {
+  padding: 10px;
+}
+
+.git-info {
+  flex: 1;
+}
+
+.git-form {
+  flex: 2;
+}
+
+.form-row {
+  display: flex;
+  width: 100%;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type=text] {
+  flex: 1;
+  margin-right: 10px;
+}
+
+input[type=text]:last-of-type {
+  margin-right: 0;
+}
+
+button[type=submit] {
+  text-decoration: none;
+  padding: 5px 10px;
+  background-color: rgb(60, 79, 88);
+  color: #fff;
+  border-radius: 4px;
+  margin-top: 5px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+  border: 1px solid rgb(55, 61, 67);
+}
+button[type=submit]:hover {
+  background-color: #27343a;
+}
+
+textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+@media (min-width: 768px) {
+  .get-in-touch {
+    flex-direction: row;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

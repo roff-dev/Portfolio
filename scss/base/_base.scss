@@ -9,3 +9,18 @@ body {
     margin: 0;
     
 }
+.back-to-top {
+    
+    a, span{
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        font-size: 1.35em; 
+        color: white;
+        cursor: pointer; 
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        padding-bottom: 10px;
+    }
+}
