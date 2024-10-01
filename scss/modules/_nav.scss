@@ -1,4 +1,10 @@
-
+.navbar {
+    background-color: $color-secondary;
+    margin-top: -20px;
+}
+.nav-logo li {
+    padding-top: 15px;
+}
 .nav-links ul, .nav-logo ul, .socials ul {
     list-style-type: none;
     padding: 0;

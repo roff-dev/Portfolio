@@ -30,6 +30,68 @@ body {
   padding-bottom: 10px;
 }
 
+.container .aboutme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.container .aboutme .self-portrait {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+  padding-top: 15px;
+}
+.container .aboutme .self-portrait img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  border: 10px dashed rgb(55, 61, 67);
+}
+.container .aboutme .description p {
+  margin: 5px 0;
+}
+.container .skills-hobbies-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.container .skills,
+.container .hobbies {
+  flex: 1;
+  margin: 0 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 10px dashed rgb(55, 61, 67);
+}
+.container .skills h2, .container .hobbies h2 {
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .skills,
+  .hobbies {
+    text-align: center;
+    font-size: 1.7em;
+  }
+  .description {
+    font-size: 1.4em;
+  }
+}
+.navbar {
+  background-color: rgb(55, 61, 67);
+  margin-top: -20px;
+}
+
+.nav-logo li {
+  padding-top: 15px;
+}
+
 .nav-links ul, .nav-logo ul, .socials ul {
   list-style-type: none;
   padding: 0;
