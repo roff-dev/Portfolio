@@ -84,14 +84,14 @@ body {
   top: 50%;
   transform: translateY(-60%);
   margin: 0;
-  font-size: 2em;
+  font-size: 4em;
 }
 
 .hero h2 {
   top: 60%;
   transform: translateY(-60%);
   margin: 0;
-  font-size: 1.2em;
+  font-size: 2em;
 }
 
 .scroll-down {
@@ -110,7 +110,57 @@ body {
 
 .scroll-down .icon-arrow-down {
   margin-top: 5px;
-  font-size: 1.5em; /* Adjust icon size */
+  font-size: 1.5em;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+.projects .project-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(55, 61, 67);
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1 1 calc(33.333% - 40px); /* 3 columns with a gap, adjust as needed */
+  box-sizing: border-box;
+  max-width: 550px;
+  min-width: 400px;
+}
+.projects .project-box img {
+  max-width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.projects .project-box h3 {
+  margin: 15px 0 5px 0;
+  font-size: 1.2rem;
+  color: white;
+  text-align: center;
+}
+.projects .project-box a {
+  text-decoration: none;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  margin-top: 5px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+.projects .project-box a:hover {
+  background-color: #0056b3;
+}
+.projects .project-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 /*# sourceMappingURL=styles.css.map */
