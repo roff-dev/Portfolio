@@ -31,6 +31,8 @@ MIXINS
 
     img {
         max-width: 100%;
+        width: 380px;
+        height: 320px;
         border-radius: $border-radius;
         object-fit: cover;
     }

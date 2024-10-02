@@ -10,6 +10,10 @@ MIXINS
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "DM Mono", monospace;
   color: white;
@@ -83,6 +87,35 @@ body {
     font-size: 1.4em;
   }
 }
+[class^=scheme] {
+  padding: 10px 20px;
+}
+[class^=scheme] p {
+  font-size: 1.2em;
+}
+[class^=scheme] h1 {
+  padding-bottom: 15px;
+  text-align: center;
+}
+[class^=scheme] h2 {
+  text-align: center;
+}
+[class^=scheme] a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.4em;
+}
+[class^=scheme] a img {
+  vertical-align: middle;
+  width: 1em;
+  height: 1em;
+}
+
+@media (min-width: 768px) {
+  [class^=scheme] h1, [class^=scheme] h2 {
+    text-align: left;
+  }
+}
 .navbar {
   background-color: rgb(55, 61, 67);
   margin-top: -20px;
@@ -113,6 +146,11 @@ body {
   display: flex;
   justify-content: center;
   padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.socials span {
+  font-size: 1.3em;
 }
 
 .socials ul {
@@ -146,6 +184,7 @@ body {
     float: left;
     position: fixed;
     z-index: 2;
+    margin-top: 0;
   }
   .nav-links, .nav-logo {
     width: 200px;
@@ -179,13 +218,13 @@ body {
 .hero {
   position: relative;
   width: 100%;
-  height: 70vh;
+  height: 100vh;
   overflow: hidden;
 }
 
 .hero img {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   object-fit: cover;
 }
 
@@ -253,6 +292,8 @@ body {
 }
 .projects .project-box img {
   max-width: 100%;
+  width: 380px;
+  height: 320px;
   border-radius: 8px;
   object-fit: cover;
 }

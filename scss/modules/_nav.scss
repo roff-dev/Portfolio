@@ -23,8 +23,11 @@
     display: flex; 
     justify-content: center; 
     padding-bottom: 20px;
+    padding-top: 20px;
 }
-
+.socials span {
+    font-size: 1.3em;
+}
 .socials ul {
     display: flex; 
     padding: 0; 
@@ -60,6 +63,7 @@
     float: left; 
     position: fixed;
     z-index: 2;
+    margin-top: 0;
 }
 
 .nav-links, .nav-logo {
