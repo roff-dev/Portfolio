@@ -252,7 +252,7 @@ body {
   top: 50%;
   transform: translateY(-60%);
   margin: 0;
-  font-size: 40em;
+  font-size: 4em;
 }
 
 .hero h2 {
@@ -386,7 +386,7 @@ button[type=submit] {
   border: 1px solid rgb(55, 61, 67);
 }
 button[type=submit]:hover {
-  background-color: rgb(39.3243243243, 51.777027027, 57.6756756757);
+  background-color: #27343a;
 }
 
 textarea {
