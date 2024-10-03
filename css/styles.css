@@ -110,6 +110,9 @@ body {
   width: 1em;
   height: 1em;
 }
+[class^=scheme] li {
+  font-size: 1.2em;
+}
 
 @media (min-width: 768px) {
   [class^=scheme] h1, [class^=scheme] h2 {
@@ -180,6 +183,9 @@ body {
     z-index: 2;
     margin-top: 0;
   }
+  .nav-logo li {
+    padding-top: 0;
+  }
   .nav-links, .nav-logo {
     width: 200px;
   }
@@ -192,6 +198,11 @@ body {
     padding-top: 25px;
     padding-bottom: 25px;
     font-size: 2em;
+    border-top: 10px dashed rgb(73, 70, 79);
+  }
+  .nav-links ul:first-child {
+    border-top: 10px dashed rgb(73, 70, 79);
+    padding-top: 20px;
   }
   .nav-links li a, .nav-logo li a {
     display: block;
@@ -210,7 +221,10 @@ body {
   }
   .scs-scheme {
     padding-bottom: 20px;
-    border-bottom: 2px solid #ccc;
+    border-bottom: 10px dashed rgb(73, 70, 79);
+  }
+  .contact-me {
+    padding-top: 20px;
   }
   .content {
     margin-left: 200px;
