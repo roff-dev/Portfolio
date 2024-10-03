@@ -18,7 +18,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black overlay */
+    background: rgba(0, 0, 0, 0.8); 
     z-index: -1;
   }
 .hero h1, .hero h2 {
@@ -30,7 +30,7 @@
 }
 
 .hero h1 {
-    top: 50%;
+    top: 45%;
     transform: translateY(-60%); 
     margin: 0;
     font-size: 4em; 
@@ -38,7 +38,7 @@
 
 
 .hero h2 {
-    top: 60%;
+    top: 55%;
     transform: translateY(-60%); 
     margin: 0;
     font-size: 2em; 
@@ -51,7 +51,7 @@
     font-size: 1.35em; 
     color: white;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
-    cursor: pointer; 
+    
     display: flex;
     flex-direction: column; 
     align-items: center; 

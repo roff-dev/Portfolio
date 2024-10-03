@@ -1,15 +1,22 @@
 .projects {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; 
+    gap: 30px; 
     justify-content: center; 
     padding: 20px;
 
     .project-box {
         @include project-mix(15px, #333, 8px); 
-        flex: 1 1 calc(33.333% - 40px); /* 3 columns with a gap, adjust as needed */
+        flex: 1 1 calc(33.333% - 40px); 
         box-sizing: border-box;
         max-width: 550px; 
         min-width: 400px;
+    }
+}
+
+@include mq ('xl') {
+    .projects{
+        padding-right: 100px;
+        padding-left: 100px;
     }
 }

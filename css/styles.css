@@ -146,7 +146,6 @@ body {
   display: flex;
   justify-content: center;
   padding-bottom: 20px;
-  padding-top: 20px;
 }
 
 .socials span {
@@ -165,11 +164,6 @@ body {
   text-decoration: none;
   color: white;
   line-height: 1.2em;
-}
-
-.nav-links li:hover {
-  background-color: rgb(60, 79, 88);
-  color: white;
 }
 
 @media (min-width: 768px) {
@@ -201,18 +195,28 @@ body {
   }
   .nav-links li a, .nav-logo li a {
     display: block;
-    padding: 8px 16px;
+    padding: 8px 20px;
     text-decoration: none;
     color: white;
     line-height: 2em;
     text-align: center;
   }
+  .nav-links a {
+    width: 100%;
+  }
   .nav-links li a:hover {
     background-color: rgb(60, 79, 88);
     color: white;
   }
+  .scs-scheme {
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ccc;
+  }
   .content {
     margin-left: 200px;
+  }
+  .socials {
+    padding-top: 20px;
   }
 }
 .hero {
@@ -236,7 +240,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.8); /* Semi-transparent black overlay */
+  background: rgba(0, 0, 0, 0.8);
   z-index: -1;
 }
 
@@ -249,14 +253,14 @@ body {
 }
 
 .hero h1 {
-  top: 50%;
+  top: 45%;
   transform: translateY(-60%);
   margin: 0;
   font-size: 4em;
 }
 
 .hero h2 {
-  top: 60%;
+  top: 55%;
   transform: translateY(-60%);
   margin: 0;
   font-size: 2em;
@@ -270,7 +274,6 @@ body {
   font-size: 1.35em;
   color: white;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
-  cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -284,7 +287,7 @@ body {
 .projects {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 30px;
   justify-content: center;
   padding: 20px;
 }
@@ -297,7 +300,7 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  flex: 1 1 calc(33.333% - 40px); /* 3 columns with a gap, adjust as needed */
+  flex: 1 1 calc(33.333% - 40px);
   box-sizing: border-box;
   max-width: 550px;
   min-width: 400px;
@@ -333,6 +336,12 @@ body {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
+@media (min-width: 1200px) {
+  .projects {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+}
 .get-in-touch {
   display: flex;
   flex-direction: column;
@@ -376,17 +385,17 @@ input[type=text]:last-of-type {
 
 button[type=submit] {
   text-decoration: none;
-  padding: 5px 10px;
-  background-color: rgb(60, 79, 88);
+  padding: 8px 25px;
+  background-color: #007bff;
   color: #fff;
   border-radius: 4px;
   margin-top: 5px;
   font-size: 0.9rem;
   transition: background-color 0.3s ease;
-  border: 1px solid rgb(55, 61, 67);
+  border: none;
 }
 button[type=submit]:hover {
-  background-color: #27343a;
+  background-color: #0056b3;
 }
 
 textarea {
@@ -398,6 +407,15 @@ textarea {
   .get-in-touch {
     flex-direction: row;
   }
+}
+@media (min-width: 1200px) {
+  .get-in-touch {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+}
+.coding {
+  padding-left: 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */
