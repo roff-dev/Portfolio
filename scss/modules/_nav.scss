@@ -23,7 +23,7 @@
     display: flex; 
     justify-content: center; 
     padding-bottom: 20px;
-    padding-top: 20px;
+    
 }
 .socials span {
     font-size: 1.3em;
@@ -46,10 +46,7 @@
 
 }
    
-.nav-links li:hover {
-    background-color: $color-accent;
-    color: white;
-}
+
 
 @include mq ('m') {
     .container {
@@ -84,63 +81,31 @@
 
 .nav-links li a, .nav-logo li a {
     display: block;
-    padding: 8px 16px;
+    padding: 8px 20px;
     text-decoration: none;
     color: white;
     line-height: 2em;
     text-align: center;
 }
 
+.nav-links a {
+    width: 100%;
+}
+
 .nav-links li a:hover {
     background-color: $color-accent;
     color: white;
 }
-
+.scs-scheme {
+    padding-bottom: 20px; 
+    border-bottom: 2px solid #ccc; 
+}
 .content {
     margin-left: 200px; 
     
 }
+.socials {
+    padding-top: 20px;
+}
 }
 
-// .navbar {
-//     width: 200px;
-//     height: 100vh; 
-//     background-color: $color-secondary;
-//     float: left; 
-//     position: fixed;
-// }
-
-// .nav-links, .nav-logo {
-//     width: 200px;
-// }
-
-// .nav-links ul, .nav-logo ul {
-//     list-style-type: none;
-//     margin: 0;
-//     padding: 0;
-// }
-
-// .nav-logo ul:first-child {
-//     padding-top: 25px;
-//     padding-bottom: 25px;
-//     font-size: 3em;
-// }
-
-// .nav-links li a, .nav-logo li a {
-//     display: block;
-//     padding: 8px 16px;
-//     text-decoration: none;
-//     color: white;
-//     line-height: 2em;
-//     text-align: center;
-// }
-
-// .nav-links li a:hover {
-//     background-color: $color-accent;
-//     color: white;
-// }
-
-// .content {
-//     margin-left: 200px; 
-    
-// }
