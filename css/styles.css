@@ -34,6 +34,19 @@ body {
   padding-bottom: 10px;
 }
 
+.wrapper {
+  flex: 1;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(55, 61, 67);
+  color: white;
+  bottom: 0;
+  width: 100%;
+}
+
 .container .aboutme {
   display: flex;
   flex-direction: column;
