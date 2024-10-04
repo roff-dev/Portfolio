@@ -1,68 +1,64 @@
-
-.container {
-    
-
-   
-    .aboutme {
-        display: flex;
-        flex-direction: column; 
-        align-items: center; 
-        text-align: center; 
-
-        
-        .self-portrait {
-            display: flex; 
-            justify-content: center; 
-            align-items: center; 
-            width: 100%; 
-            margin-bottom: 10px; 
-            padding-top: 15px;
-            
-            
-            img {
-                display: block;
-                max-width: 100%; 
-                height: auto;
-                border-radius: 50%; 
-                border: 10px dashed $color-secondary;
-                
-            }
-        }
-
-        
-        .description {
-            p {
-                margin: 5px 0; 
-            }
-        }
-        
-    }
-   
-    .skills-hobbies-container {
-        display: flex;           
-        justify-content: space-between; 
-        width: 100%;             
-        padding: 20px;           
-        box-sizing: border-box;  
-    }
-
-
-    .skills,
-    .hobbies {
-        flex: 1;                
-        margin: 0 10px;          
-        padding: 20px;          
-        box-sizing: border-box;  
-        border: 10px dashed $color-secondary;  
-        
-    }
-
-
-    .skills h2, .hobbies h2 {
-        text-align: center;
-    }
  
+.aboutme {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+
+    
+    .self-portrait {
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        width: 100%; 
+        margin-bottom: 10px; 
+        padding-top: 15px;
+        
+        
+        img {
+            display: block;
+            max-width: 100%; 
+            height: auto;
+            border-radius: 50%; 
+            border: 10px dashed $color-secondary;
+            
+        }
+    }
+
+    
+    .description {
+        p {
+            margin: 5px 0; 
+        }
+    }
+    
 }
+
+.skills-hobbies-container {
+    display: flex;           
+    justify-content: space-between; 
+    width: 100%;             
+    padding: 20px;           
+    box-sizing: border-box;  
+}
+
+
+.skills,
+.hobbies {
+    flex: 1;                
+    margin: 0 10px;          
+    padding: 20px;          
+    box-sizing: border-box;  
+    border: 10px dashed $color-secondary;  
+    
+}
+
+
+.skills h2, .hobbies h2 {
+    text-align: center;
+}
+ 
+
 
 @include mq ('l') {
     .skills,
