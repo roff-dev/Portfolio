@@ -31,8 +31,11 @@ input, textarea {
     margin: 5px 0; 
     border: 1px solid #ccc;
     border-radius: 4px; 
+    background-color: $color-secondary;
 }
-
+input::placeholder, textarea::placeholder {
+    color: white;
+}
 
 input[type="text"] {
     flex: 1; 
