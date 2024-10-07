@@ -243,9 +243,22 @@ footer {
   font-size: 1.2em;
 }
 
+[class^=scheme-] {
+  border-bottom: 10px dashed rgb(55, 61, 67);
+}
+
+.scheme-about {
+  border-bottom: none;
+}
+
 @media (min-width: 768px) {
   [class^=scheme] h1, [class^=scheme] h2 {
     text-align: left;
+  }
+}
+@media (min-width: 1200px) {
+  .scheme-about {
+    border-bottom: 10px dashed rgb(55, 61, 67);
   }
 }
 .navbar {

@@ -25,13 +25,20 @@
         font-size: 1.2em;
     }
 }
+[class^="scheme-"] {
+    border-bottom: 10px dashed $color-secondary;
+}
 
-
-
-
+.scheme-about {
+    border-bottom: none;
+}
 @include mq('m') {
     [class^="scheme"] h1, [class^="scheme"] h2{
         text-align: left;
     }
-
+}
+@include mq('xl') {
+    .scheme-about {
+        border-bottom: 10px dashed $color-secondary;
+    }
 }
