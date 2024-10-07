@@ -12,13 +12,13 @@ body {
     margin: 0;
     
 }
-.back-to-top {
+.back-to-top, .scroll-down {
     
     a, span{
         text-decoration: none;
         color: white;
         text-align: center;
-        font-size: 1.35em; 
+        
         color: white;
         cursor: pointer; 
         display: flex;
@@ -26,6 +26,12 @@ body {
         align-items: center; 
         padding-bottom: 10px;
     }
+}
+
+.back-to-top {
+  a, span {
+    font-size: 1.35em;
+  }
 }
 .wrapper {
     flex: 1;
