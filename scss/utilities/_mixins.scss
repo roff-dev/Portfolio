@@ -3,7 +3,6 @@ MIXINS
 ===================================================================*/
 
 //media query breakpoint
-
 @mixin mq($break) {  
     $value: map-get($breakpoints, $break);
     $sm: map-get($breakpoints, 'sm');            
@@ -19,48 +18,110 @@ MIXINS
     }  
   }
 
-  @mixin project-mix($gap: 10px, $text-color: white, $border-radius: 8px) {
+
+@mixin project-mix($gap: 10px, $text-color: white, $border-radius: 8px) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color-secondary;
+  padding: $gap;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: $border-radius;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  img {
+      max-width: 100%;
+      width: 380px;
+      height: 320px;
+      border-radius: $border-radius;
+      object-fit: cover;
+      
+  }
+
+  h3 {
+      margin: $gap 0 5px 0;
+      font-size: 1.2rem;
+      color: white;
+      text-align: center;
+  }
+
+  a {
+      text-decoration: none;
+      padding: 5px 10px;
+      background-color: #007bff; 
+      color: #fff;
+      border-radius: 4px;
+      margin-top: 5px;
+      font-size: 0.9rem;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+          background-color: #0056b3; 
+      }
+  }
+
+  &:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+    
+    @media (max-width: 400px) {
+      width: 100%;
+      box-sizing: border-box;
+  
+      
+      img {
+        width: 100%;   
+        height: auto;  
+        max-width: 280px; 
+        max-height: 240px; 
+      }
+  
+      
+      h3 {
+        font-size: 1rem; 
+      }
+  
+      
+      a {
+        font-size: 0.8rem; 
+        padding: 4px 8px;  
+      }
+    }
+  }
+  
+  
+  .projects {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: $color-secondary;
-    padding: $gap;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: $border-radius;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-    img {
-        max-width: 100%;
-        width: 380px;
-        height: 320px;
-        border-radius: $border-radius;
-        object-fit: cover;
+    flex-wrap: wrap;
+    gap: 30px; 
+    justify-content: center;
+    padding: 20px;
+  
+    .project-box {
+      @include project-mix(15px, #333, 8px);
+      flex: 1 1 calc(33.333% - 40px); 
+      box-sizing: border-box;
+      max-width: 550px;
+      min-width: 400px;
     }
-
-    h3 {
-        margin: $gap 0 5px 0;
-        font-size: 1.2rem;
-        color: white;
-        text-align: center;
+  
+   
+    @media (max-width: 400px) {
+      gap: 15px; 
+  
+      .project-box {
+        flex: 1 1 100%;   
+        max-width: 100%;  
+        min-width: 100%;
+      }
     }
-
-    a {
-        text-decoration: none;
-        padding: 5px 10px;
-        background-color: #007bff; 
-        color: #fff;
-        border-radius: 4px;
-        margin-top: 5px;
-        font-size: 0.9rem;
-        transition: background-color 0.3s ease;
-
-        &:hover {
-            background-color: #0056b3; 
-        }
+  }
+  
+  
+  @include mq('xl') {
+    .projects {
+      padding-right: 100px;
+      padding-left: 100px;
     }
-
-    &:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    }
-}
+  }

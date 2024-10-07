@@ -39,3 +39,23 @@ footer {
     bottom: 0;
     width: 100%;
 }
+.contact-text {
+    .form-position {
+      
+      display: inline;
+  
+      
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
+  
+    
+    @media (min-width: 768px) {
+      &::after {
+        content: " here."; 
+        font-weight: normal;
+      }
+    }
+  }
+  

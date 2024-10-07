@@ -6,6 +6,93 @@
 /*=================================================================
 MIXINS
 ===================================================================*/
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding: 20px;
+}
+.projects .project-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(55, 61, 67);
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1 1 calc(33.333% - 40px);
+  box-sizing: border-box;
+  max-width: 550px;
+  min-width: 400px;
+}
+.projects .project-box img {
+  max-width: 100%;
+  width: 380px;
+  height: 320px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.projects .project-box h3 {
+  margin: 15px 0 5px 0;
+  font-size: 1.2rem;
+  color: white;
+  text-align: center;
+}
+.projects .project-box a {
+  text-decoration: none;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  margin-top: 5px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+.projects .project-box a:hover {
+  background-color: #0056b3;
+}
+.projects .project-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+@media (max-width: 400px) {
+  .projects .project-box {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .projects .project-box img {
+    width: 100%;
+    height: auto;
+    max-width: 280px;
+    max-height: 240px;
+  }
+  .projects .project-box h3 {
+    font-size: 1rem;
+  }
+  .projects .project-box a {
+    font-size: 0.8rem;
+    padding: 4px 8px;
+  }
+}
+@media (max-width: 400px) {
+  .projects {
+    gap: 15px;
+  }
+  .projects .project-box {
+    flex: 1 1 100%;
+    max-width: 100%;
+    min-width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .projects {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -48,6 +135,21 @@ footer {
   width: 100%;
 }
 
+.contact-text .form-position {
+  display: inline;
+}
+@media (min-width: 768px) {
+  .contact-text .form-position {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .contact-text::after {
+    content: " here.";
+    font-weight: normal;
+  }
+}
+
 .aboutme {
   display: flex;
   flex-direction: column;
@@ -86,7 +188,6 @@ footer {
   flex: 1;
   margin: 0 10px;
   padding: 20px;
-  box-sizing: border-box;
   border: 10px dashed rgb(55, 61, 67);
 }
 
@@ -102,6 +203,14 @@ footer {
   }
   .description {
     font-size: 1.4em;
+  }
+}
+@media (max-width: 400px) {
+  .skills-hobbies-container {
+    flex-direction: column;
+  }
+  .skills {
+    margin-bottom: 20px;
   }
 }
 [class^=scheme] {
@@ -355,13 +464,40 @@ footer {
   transform: translateY(-8px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
-
-@media (min-width: 1200px) {
-  .projects {
-    padding-right: 100px;
-    padding-left: 100px;
+@media (max-width: 400px) {
+  .projects .project-box {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .projects .project-box img {
+    width: 100%;
+    height: auto;
+    max-width: 280px;
+    max-height: 240px;
+  }
+  .projects .project-box h3 {
+    font-size: 1rem;
+  }
+  .projects .project-box a {
+    font-size: 0.8rem;
+    padding: 4px 8px;
   }
 }
+@media (max-width: 400px) {
+  .projects {
+    gap: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .projects .project-box {
+    flex: 1 1 100%;
+    max-width: 100%;
+    min-width: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
 .get-in-touch {
   display: flex;
   flex-direction: column;
