@@ -1,3 +1,14 @@
+var typed = new Typed("#typed", {
+    strings: [`C:/Users/Kieron Oates>  npm install Web Developer --skills`],
+    typeSpeed: 35,
+    startDelay: 500,
+    backDelay: 1000,
+    backSpeed: 35,
+    loop: true,
+    
+});
+
+
 // Wait until the DOM is fully loaded
 document.addEventListener("DOMContentLoaded", function() {
     const form = document.querySelector('form');

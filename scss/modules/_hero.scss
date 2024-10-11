@@ -10,6 +10,7 @@
     height: 100vh;
     object-fit: cover;
     filter: brightness(20%);
+    z-index: 1; 
 }
 
 .hero h1, .hero h2 {
@@ -51,5 +52,31 @@
 .scroll-down .icon-arrow-down {
     margin-top: 5px; 
     font-size: 1.5em; 
+}
+
+section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('/img/hero-image.jpg');
+    
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.text-editor {
+    background: black;
+    width: 60%;
+    
+    padding: 15px 15px 300px;
+    border-radius: 8px;
+    border-top: 20px solid #e8e8e8;
+    
+}
+
+.text-editor .text-body {
+    font-size: 24px;
+    color: white;
+
 }
 
