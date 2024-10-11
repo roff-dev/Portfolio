@@ -8,10 +8,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Regex pattern for a valid email
     const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    
 
     form.addEventListener('submit', function(event) {
         let isValid = true;
-        alert("Contact Form Sent!");
+        
         // Clear any previous error messages
         clearErrorMessages();
 
@@ -42,29 +43,31 @@ document.addEventListener("DOMContentLoaded", function() {
         // If the form is invalid, prevent submission
         if (!isValid) {
             event.preventDefault();
+        } else {
+            alert("Contact Form Sent! Response will arrive shortly.");
         }
     });
 
     // Function to show an error message
-    function showError(input, message) {
-        const errorElement = document.createElement('span');
-        errorElement.classList.add('error-message');
-        errorElement.innerText = message;
-        input.parentNode.insertBefore(errorElement, input.nextSibling);
-        input.classList.add('error');  // Optionally style the input on error
-    }
+    // function showError(input, message) {
+    //     const errorElement = document.createElement('span');
+    //     errorElement.classList.add('error-message');
+    //     errorElement.innerText = message;
+    //     input.parentNode.insertBefore(errorElement, input.nextSibling);
+    //     input.classList.add('error');  // Optionally style the input on error
+    // }
 
-    // Function to clear all error messages
-    function clearErrorMessages() {
-        const errorMessages = document.querySelectorAll('.error-message');
-        errorMessages.forEach(function(error) {
-            error.remove();
-        });
+    // // Function to clear all error messages
+    // function clearErrorMessages() {
+    //     const errorMessages = document.querySelectorAll('.error-message');
+    //     errorMessages.forEach(function(error) {
+    //         error.remove();
+    //     });
 
-        // Remove error styling from inputs
-        const errorInputs = document.querySelectorAll('.error');
-        errorInputs.forEach(function(input) {
-            input.classList.remove('error');
-        });
-    }
+    //     // Remove error styling from inputs
+    //     const errorInputs = document.querySelectorAll('.error');
+    //     errorInputs.forEach(function(input) {
+    //         input.classList.remove('error');
+    //     });
+    // }
 });
