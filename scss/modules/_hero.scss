@@ -1,7 +1,7 @@
 .hero {
     position: relative;
     width: 100%;
-    height: 100vh; 
+    height: calc(100vh - 114px); 
     overflow: hidden;
 }
 
@@ -55,13 +55,13 @@
 }
 
 section {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("https://github.com/roff-dev/Portfolio/blob/main/img/hero-image.jpg"), url("../../img/hero-image.jpg");
-
+    background-image: url("https://github.com/roff-dev/Portfolio/blob/main/img/hero-image.jpg"), url("../../img/hero-image.jpg");
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: multiply;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .text-editor {

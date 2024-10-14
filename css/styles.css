@@ -268,6 +268,7 @@ footer {
 
 .nav-logo li {
   padding-top: 15px;
+  font-size: 1.2em;
 }
 
 .nav-links ul, .nav-logo ul, .socials ul {
@@ -276,10 +277,20 @@ footer {
 }
 
 .nav-links {
+  display: none;
+  padding-top: 0;
+}
+
+.nav-links.active {
+  display: flex;
   flex: 1;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
+  margin-top: -20px;
+}
+.nav-links.active .contact-me {
+  padding-bottom: 15px;
 }
 
 .nav-links li, .nav-logo li {
@@ -311,10 +322,40 @@ footer {
   line-height: 1.2em;
 }
 
+.hamburger {
+  display: block;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 10px;
+  color: white;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 3;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.nav-links.active {
+  display: flex;
+  animation: fadeIn 0.7s forwards;
+}
+
 @media (min-width: 768px) {
   .container {
     width: calc(100% - 200px);
     float: right;
+  }
+  .hamburger {
+    display: none;
   }
   .navbar {
     width: 200px;
@@ -325,8 +366,16 @@ footer {
     z-index: 2;
     margin-top: 0;
   }
+  .nav-links {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
   .nav-logo li {
     padding-top: 0;
+    font-size: 1em;
   }
   .nav-links, .nav-logo {
     width: 200px;
@@ -378,7 +427,7 @@ footer {
 .hero {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 114px);
   overflow: hidden;
 }
 
@@ -431,7 +480,9 @@ footer {
 }
 
 section {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("https://github.com/roff-dev/Portfolio/blob/main/img/hero-image.jpg"), url("../../img/hero-image.jpg");
+  background-image: url("https://github.com/roff-dev/Portfolio/blob/main/img/hero-image.jpg"), url("../../img/hero-image.jpg");
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: multiply;
   height: 100vh;
   display: flex;
   justify-content: center;
