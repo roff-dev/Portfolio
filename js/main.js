@@ -24,6 +24,19 @@ document.addEventListener('click', (event) => {
     }
 });
 
+//flip function
+$(document).ready(function() {
+    // Click the flip button to flip the card to the back
+    $('.flip-btn').on('click', function() {
+        $(this).closest('.card').addClass('flipped'); // Add 'flipped' class to flip the card
+    });
+
+    // Click the back button to flip the card back to the front
+    $('.flip-back-btn').on('click', function() {
+        $(this).closest('.card').removeClass('flipped'); // Remove 'flipped' class to unflip the card
+    });
+});
+
 // load dom
 document.addEventListener("DOMContentLoaded", function() {
     const form = document.querySelector('form');
