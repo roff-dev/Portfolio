@@ -89,39 +89,7 @@ MIXINS
       }
     }
   }
+
   
   
-  .projects {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px; 
-    justify-content: center;
-    padding: 20px;
-  
-    .project-box {
-      @include project-mix(15px, #333, 8px);
-      flex: 1 1 calc(33.333% - 40px); 
-      box-sizing: border-box;
-      max-width: 550px;
-      min-width: 400px;
-    }
-  
-   
-    @media (max-width: 400px) {
-      gap: 15px; 
-  
-      .project-box {
-        flex: 1 1 100%;   
-        max-width: 100%;  
-        min-width: 100%;
-      }
-    }
-  }
-  
-  
-  @include mq('xl') {
-    .projects {
-      padding-right: 100px;
-      padding-left: 100px;
-    }
-  }
+
