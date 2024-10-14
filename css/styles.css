@@ -281,18 +281,6 @@ footer {
   padding-top: 0;
 }
 
-.nav-links.active {
-  display: flex;
-  flex: 1;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  margin-top: -20px;
-}
-.nav-links.active .contact-me {
-  padding-bottom: 15px;
-}
-
 .nav-links li, .nav-logo li {
   display: flex;
   justify-content: center;
@@ -344,11 +332,6 @@ footer {
     transform: translateY(0);
   }
 }
-.nav-links.active {
-  display: flex;
-  animation: fadeIn 0.7s forwards;
-}
-
 @media (min-width: 768px) {
   .container {
     width: calc(100% - 200px);
@@ -372,6 +355,14 @@ footer {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
+  }
+  .nav-links.active {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: -20px;
   }
   .nav-logo li {
     padding-top: 0;

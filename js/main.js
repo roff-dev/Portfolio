@@ -9,26 +9,18 @@ var typed = new Typed("#typed", {
     
 });
 
-const hamburger = document.querySelector('.hamburger');
-const navLinks = document.querySelector('.nav-links');
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('nav-links');
 
 // Toggle the menu
 hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('active'); 
-
-    // Check if the menu is active
-    if (navLinks.classList.contains('active')) {
-        navLinks.style.height = `${navLinks.scrollHeight}px`; //full content height
-    } else {
-        navLinks.style.height = '0'; // collapse menu
-    }
 });
 
 // Close the menu when clicking outside
 document.addEventListener('click', (event) => {
     if (!hamburger.contains(event.target) && !navLinks.contains(event.target)) {
         navLinks.classList.remove('active');
-        navLinks.style.height = '0'; // click outside collapse menu
     }
 });
 
