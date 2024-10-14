@@ -431,7 +431,7 @@ footer {
 }
 
 section {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("https://roff-dev.github.io/Portfolio/img/hero-image.jpg'"), url("/Portfolio/img/hero-image.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("https://github.com/roff-dev/Portfolio/blob/main/img/hero-image.jpg"), url("/Portfolio/img/hero-image.jpg");
   height: 100vh;
   display: flex;
   justify-content: center;
