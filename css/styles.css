@@ -245,6 +245,19 @@ footer {
     transform: translateY(0);
   }
 }
+.nav-links.active {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-top: -20px;
+  animation: fadeIn 0.7s forwards;
+}
+.nav-links.active .contact-me {
+  padding-bottom: 15px;
+}
+
 @media (min-width: 768px) {
   .container {
     width: calc(100% - 200px);

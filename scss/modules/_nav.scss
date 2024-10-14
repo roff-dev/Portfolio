@@ -65,7 +65,18 @@
         transform: translateY(0);
     }
 }
-
+.nav-links.active {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center; 
+    margin-top: -20px;
+    animation: fadeIn 0.7s forwards;
+    .contact-me {
+        padding-bottom: 15px;
+    }
+}
 
 @include mq ('m') {
     .container {
