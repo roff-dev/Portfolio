@@ -1,14 +1,3 @@
-//typing animation
-var typed = new Typed("#typed", {
-    strings: [`C:/Users/Kieron Oates>  npm install Web Developer --skills`],
-    typeSpeed: 50,
-    startDelay: 500,
-    backDelay: 1000,
-    backSpeed: 35,
-    loop: true,
-    
-});
-
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('nav-links');
 
@@ -23,6 +12,19 @@ document.addEventListener('click', (event) => {
         navLinks.classList.remove('active');
     }
 });
+
+//typing animation
+var typed = new Typed("#typed", {
+    strings: [`C:/Users/Kieron Oates>  npm install Web Developer --skills`],
+    typeSpeed: 50,
+    startDelay: 500,
+    backDelay: 1000,
+    backSpeed: 35,
+    loop: true,
+    
+});
+
+
 
 //flip function
 $(document).ready(function() {
