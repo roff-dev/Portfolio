@@ -1,7 +1,7 @@
 //typing animation
 var typed = new Typed("#typed", {
     strings: [`C:/Users/Kieron Oates>  npm install Web Developer --skills`],
-    typeSpeed: 35,
+    typeSpeed: 50,
     startDelay: 500,
     backDelay: 1000,
     backSpeed: 35,

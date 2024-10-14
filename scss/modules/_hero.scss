@@ -5,36 +5,33 @@
     overflow: hidden;
 }
 
-.hero img {
-    width: 100%;
+section {
+    background-image: url("https://github.com/roff-dev/Portfolio/blob/main/img/hero-image.jpg"), url("../../img/hero-image.jpg");
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: multiply;
     height: 100vh;
-    object-fit: cover;
-    filter: brightness(20%);
-    z-index: 1; 
+    display: flex;
+    justify-content: center;
+    align-items:first baseline;
+    
+}
+.text-editor {
+    background: black;
+    width: 90%;
+    padding: 15px 15px 150px;
+    border-radius: 8px;
+    border-top: 20px solid #e8e8e8;
+    margin-top: 200px;
 }
 
-.hero h1, .hero h2 {
-    position: absolute;
-    width: 100%;
-    text-align: center;
+.text-editor .text-body {
+    font-size: 24px;
     color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); 
-}
+    word-wrap: break-word;
 
-.hero h1 {
-    top: 45%;
-    transform: translateY(-60%); 
-    margin: 0;
-    font-size: 4em; 
 }
 
 
-.hero h2 {
-    top: 55%;
-    transform: translateY(-60%); 
-    margin: 0;
-    font-size: 2em; 
-}
 .scroll-down {
     position: absolute;
     bottom: 10px; 
@@ -54,29 +51,35 @@
     font-size: 1.5em; 
 }
 
-section {
-    background-image: url("https://github.com/roff-dev/Portfolio/blob/main/img/hero-image.jpg"), url("../../img/hero-image.jpg");
-    background-color: rgba(0, 0, 0, 0.7);
-    background-blend-mode: multiply;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.text-editor {
-    background: black;
-    width: 60%;
+
+@include mq ('m') {
+    .hero {
+        height: 100vh;
+    }
+    section {
+        background-image: url("https://github.com/roff-dev/Portfolio/blob/main/img/hero-image.jpg"), url("../../img/hero-image.jpg");
+        background-color: rgba(0, 0, 0, 0.7);
+        background-blend-mode: multiply;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     
-    padding: 15px 15px 300px;
-    border-radius: 8px;
-    border-top: 20px solid #e8e8e8;
+    .text-editor {
+        background: black;
+        width: 60%;
+        
+        padding: 15px 15px 300px;
+        border-radius: 8px;
+        border-top: 20px solid #e8e8e8;
+        
+    }
     
+    .text-editor .text-body {
+        font-size: 24px;
+        color: white;
+    
+    }
 }
-
-.text-editor .text-body {
-    font-size: 24px;
-    color: white;
-
-}
-
