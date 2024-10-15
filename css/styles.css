@@ -415,17 +415,20 @@ section {
     color: white;
   }
 }
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding: 20px;
+}
+
 .card {
   flex: 1 1 calc(33.333% - 40px);
   box-sizing: border-box;
-  max-width: 550px;
-  min-width: 400px;
-}
-.card .front {
-  z-index: 2;
-}
-.card .back {
-  backface-visibility: hidden; /* Hide the back when flipped */
+  max-width: 400px;
+  min-width: 300px;
+  min-height: 450px;
 }
 .card .front, .card .back {
   display: flex;
@@ -445,10 +448,11 @@ section {
   object-fit: cover;
 }
 .card .front h3, .card .back h3 {
-  margin: 15px 0 5px 0;
+  margin-bottom: 0;
   font-size: 1.2rem;
   color: white;
   text-align: center;
+  flex-grow: 0;
 }
 .card .front a, .card .back a {
   text-decoration: none;
@@ -456,7 +460,8 @@ section {
   background-color: #007bff;
   color: #fff;
   border-radius: 4px;
-  margin-top: 5px;
+  margin-top: auto;
+  margin-bottom: 5px;
   font-size: 0.9rem;
   transition: background-color 0.3s ease;
 }
@@ -467,54 +472,12 @@ section {
   transform: translateY(-8px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
-@media (max-width: 400px) {
-  .card .front, .card .back {
-    width: 100%;
-    box-sizing: border-box;
-  }
-  .card .front img, .card .back img {
-    width: 100%;
-    height: auto;
-    max-width: 280px;
-    max-height: 240px;
-  }
-  .card .front h3, .card .back h3 {
-    font-size: 1rem;
-  }
-  .card .front a, .card .back a {
-    font-size: 0.8rem;
-    padding: 4px 8px;
-  }
-}
-@media (max-width: 400px) {
+
+@media (min-width: 1200px) {
   .card {
-    gap: 15px;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  .card .card {
-    flex: 1 1 100%;
-    max-width: 100%;
-    min-width: 100%;
-    margin-left: 5px;
-    margin-right: 5px;
+    max-width: 550px;
   }
 }
-@media (max-width: 400px) and (min-width: 1200px) {
-  .card .projects {
-    padding-right: 100px;
-    padding-left: 100px;
-  }
-}
-
-.projects {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
-  padding: 20px;
-}
-
 .get-in-touch {
   display: flex;
   flex-direction: column;
