@@ -415,41 +415,42 @@ section {
     color: white;
   }
 }
-.projects {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
-  padding: 20px;
-}
-.projects .project-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: rgb(55, 61, 67);
-  padding: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.card {
   flex: 1 1 calc(33.333% - 40px);
   box-sizing: border-box;
   max-width: 550px;
   min-width: 400px;
 }
-.projects .project-box img {
+.card .front {
+  z-index: 2;
+}
+.card .back {
+  backface-visibility: hidden; /* Hide the back when flipped */
+}
+.card .front, .card .back {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(55, 61, 67);
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card .front img, .card .back img {
   max-width: 100%;
   width: 380px;
   height: 320px;
   border-radius: 8px;
   object-fit: cover;
 }
-.projects .project-box h3 {
+.card .front h3, .card .back h3 {
   margin: 15px 0 5px 0;
   font-size: 1.2rem;
   color: white;
   text-align: center;
 }
-.projects .project-box a {
+.card .front a, .card .back a {
   text-decoration: none;
   padding: 5px 10px;
   background-color: #007bff;
@@ -459,39 +460,39 @@ section {
   font-size: 0.9rem;
   transition: background-color 0.3s ease;
 }
-.projects .project-box a:hover {
+.card .front a:hover, .card .back a:hover {
   background-color: #0056b3;
 }
-.projects .project-box:hover {
+.card .front:hover, .card .back:hover {
   transform: translateY(-8px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 @media (max-width: 400px) {
-  .projects .project-box {
+  .card .front, .card .back {
     width: 100%;
     box-sizing: border-box;
   }
-  .projects .project-box img {
+  .card .front img, .card .back img {
     width: 100%;
     height: auto;
     max-width: 280px;
     max-height: 240px;
   }
-  .projects .project-box h3 {
+  .card .front h3, .card .back h3 {
     font-size: 1rem;
   }
-  .projects .project-box a {
+  .card .front a, .card .back a {
     font-size: 0.8rem;
     padding: 4px 8px;
   }
 }
 @media (max-width: 400px) {
-  .projects {
+  .card {
     gap: 15px;
     padding-left: 10px;
     padding-right: 10px;
   }
-  .projects .project-box {
+  .card .card {
     flex: 1 1 100%;
     max-width: 100%;
     min-width: 100%;
@@ -499,11 +500,19 @@ section {
     margin-right: 5px;
   }
 }
-@media (min-width: 1200px) {
-  .projects .projects {
+@media (max-width: 400px) and (min-width: 1200px) {
+  .card .projects {
     padding-right: 100px;
     padding-left: 100px;
   }
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding: 20px;
 }
 
 .get-in-touch {

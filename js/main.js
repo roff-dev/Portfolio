@@ -28,17 +28,22 @@ var typed = new Typed("#typed", {
 
 //flip function
 $(document).ready(function() {
-    // Click the flip button to flip the card to the back
-    $('.flip-btn').on('click', function() {
-        $(this).closest('.card').addClass('flipped'); // Add 'flipped' class to flip the card
+    // Initialize the flip effect on the card
+    $('.card').flip({
+        trigger: 'manual' // We will manually trigger the flip
     });
 
-    // Click the back button to flip the card back to the front
-    $('.flip-back-btn').on('click', function() {
-        $(this).closest('.card').removeClass('flipped'); // Remove 'flipped' class to unflip the card
+    // Flip the card when it's clicked
+    $('.card').on('click', function() {
+        if (!$(this).data('flipped')) {
+            $(this).flip(true); // Flip to the back
+            $(this).data('flipped', true); // Mark as flipped
+        } else {
+            $(this).flip(false); // Flip back to the front
+            $(this).data('flipped', false); // Unmark as flipped
+        }
     });
 });
-
 // load dom
 document.addEventListener("DOMContentLoaded", function() {
     const form = document.querySelector('form');
