@@ -28,19 +28,18 @@ var typed = new Typed("#typed", {
 
 //flip function
 $(document).ready(function() {
-    // Initialize the flip effect on the card
     $('.card').flip({
-        trigger: 'manual' // We will manually trigger the flip
+        trigger: 'manual' 
     });
 
-    // Flip the card when it's clicked
-    $('.card').on('click touchstart', function() {
+    $('.card').on('click touchstart', function(event) {
+        event.preventDefault(); 
         if (!$(this).data('flipped')) {
-            $(this).flip(true); // Flip to the back
-            $(this).data('flipped', true); // Mark as flipped
+            $(this).flip(true); 
+            $(this).data('flipped', true);
         } else {
-            $(this).flip(false); // Flip back to the front
-            $(this).data('flipped', false); // Unmark as flipped
+            $(this).flip(false); 
+            $(this).data('flipped', false); 
         }
     });
 });
