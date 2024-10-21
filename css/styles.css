@@ -132,6 +132,9 @@ footer {
 [class^=scheme] {
   padding: 10px 20px;
 }
+[class^=scheme] ul {
+  line-height: 1.75em;
+}
 [class^=scheme] p {
   font-size: 1.2em;
 }
@@ -207,6 +210,14 @@ footer {
 
 .socials span {
   font-size: 1.3em;
+}
+
+#linkedin:hover span:hover {
+  color: #0077B5;
+}
+
+#github span:hover {
+  color: black;
 }
 
 .socials ul {
@@ -301,6 +312,7 @@ footer {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    width: 100%;
   }
   .nav-logo ul:first-child {
     padding-top: 25px;

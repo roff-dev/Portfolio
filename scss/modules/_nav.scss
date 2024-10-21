@@ -28,6 +28,17 @@
 }
 .socials span {
     font-size: 1.3em;
+    
+}
+#linkedin:hover {
+    span:hover {
+        color: #0077B5;
+    }
+} 
+#github{
+    span:hover {
+        color: black;
+    }
 }
 .socials ul {
     display: flex; 
@@ -109,8 +120,6 @@
         flex-wrap: nowrap;
         justify-content: center; 
         margin-top: -20px;
-        
-        
     }
     .nav-logo li {
         padding-top: 0;
@@ -124,6 +133,7 @@
         list-style-type: none;
         margin: 0;
         padding: 0;
+        width: 100%;
     }
 
     .nav-logo ul:first-child {
