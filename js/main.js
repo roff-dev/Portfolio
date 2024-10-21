@@ -32,8 +32,8 @@ $(document).ready(function() {
         trigger: 'manual' 
     });
 
-    $('.card').on('click touchstart', function(event) {
-        event.preventDefault(); 
+    $('.card').on('click', function(event) {
+        
         if (!$(this).data('flipped')) {
             $(this).flip(true); 
             $(this).data('flipped', true);
