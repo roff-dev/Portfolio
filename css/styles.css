@@ -406,12 +406,6 @@ section {
     height: 100vh;
   }
   section {
-    background-image: url("../../img/hero-image.jpg");
-    background-color: rgba(0, 0, 0, 0.7);
-    background-blend-mode: multiply;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
     align-items: first baseline;
   }
   .text-editor {
