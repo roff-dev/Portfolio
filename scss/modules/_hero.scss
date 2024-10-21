@@ -6,7 +6,7 @@
 }
 
 section {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://github.com/roff-dev/Portfolio/blob/203e8a06cb2694e182a4a1a194274580ecaf2224/img/hero-image.jpg"), url('/img/hero-image.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/img/hero-image.jpg'), url('https://roff-dev.github.io/Portfolio/img/hero-image.jpg');
     height: 100vh;
     display: flex;
     justify-content: center;
