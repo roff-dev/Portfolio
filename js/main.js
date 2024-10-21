@@ -29,7 +29,9 @@ var typed = new Typed("#typed", {
 //flip function
 $(document).ready(function() {
     $('.card').flip({
-        trigger: 'manual' 
+        trigger: 'manual' ,
+        speed: 700, 
+        easing: 'ease-in-out',
     });
 
     $('.card').on('click', function(event) {
