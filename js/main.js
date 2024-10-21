@@ -34,7 +34,7 @@ $(document).ready(function() {
     });
 
     // Flip the card when it's clicked
-    $('.card').on('click', function() {
+    $('.card').on('click touchstart', function() {
         if (!$(this).data('flipped')) {
             $(this).flip(true); // Flip to the back
             $(this).data('flipped', true); // Mark as flipped
