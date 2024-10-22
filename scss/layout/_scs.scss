@@ -7,10 +7,7 @@
     p {
         font-size: 1.2em;
     }
-    h1 {
-        padding-bottom: 15px;
-        text-align: center;
-    }
+
     h2 {
         text-align: center;
     }
@@ -29,8 +26,10 @@
         font-size: 1.2em;
     }
 }
-
-
+.scs-scheme-header {
+    padding-bottom: 15px;
+    text-align: center;
+}
 .scheme-about {
     border-bottom: none;
 }
@@ -42,18 +41,7 @@
 }
 
 
-@include mq('m') {
-    [class^="scheme"] h1, [class^="scheme"] h2{
-        //text-align: left;
-    }
-}
-@include mq('xl') {
-    .scheme-about {
-        //border-bottom: 10px dashed $color-secondary;
-    }
-}
-
-/* Style for individual dots */
+//dot styling
 .slick-dots li {
     list-style: none;
 }
@@ -61,7 +49,7 @@
 .slick-dots li button {
     width: 12px;
     height: 12px;
-    background-color: #ccc; /* Inactive dot color */
+    background-color: #ccc; 
     border-radius: 50%;
     border: none;
     padding: 0;
@@ -69,6 +57,17 @@
 }
 
 .slick-dots li.slick-active button {
-    background-color: #333; /* Active dot color */
+    background-color: #333; 
 }
-
+@include mq ('m') {
+    .net-list {
+        list-style: none;
+        text-align: center;
+        padding-left: 0;
+    }
+    .scs-footer {
+        position: absolute; 
+        width: calc(100vw - 200px); 
+        margin-left: 200px;
+    }
+}
