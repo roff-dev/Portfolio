@@ -1,5 +1,6 @@
 [class^="scheme"] {
     padding: 10px 20px;
+    
     ul {
         line-height: 1.75em;
     }
@@ -28,20 +29,46 @@
         font-size: 1.2em;
     }
 }
-[class^="scheme-"] {
-    border-bottom: 10px dashed $color-secondary;
-}
+
 
 .scheme-about {
     border-bottom: none;
 }
+
+.scheme img {
+    vertical-align: middle;
+    width: 1em;
+    height: 1em;
+}
+
+
 @include mq('m') {
     [class^="scheme"] h1, [class^="scheme"] h2{
-        text-align: left;
+        //text-align: left;
     }
 }
 @include mq('xl') {
     .scheme-about {
-        border-bottom: 10px dashed $color-secondary;
+        //border-bottom: 10px dashed $color-secondary;
     }
 }
+
+/* Style for individual dots */
+.slick-dots li {
+    list-style: none;
+}
+
+.slick-dots li button {
+    width: 12px;
+    height: 12px;
+    background-color: #ccc; /* Inactive dot color */
+    border-radius: 50%;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.slick-dots li.slick-active button {
+    background-color: #333; /* Active dot color */
+}
+

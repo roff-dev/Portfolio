@@ -6,6 +6,8 @@
     <link rel="icon" href="img/pixelroff.png" type="image/png">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="img/icons/style.css">
+    <link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
     <title>K O Portfolio</title>
 </head>
 <body>
@@ -21,7 +23,7 @@
         <div class="nav-links" id="nav-links">
             <ul>
                 <li><a href="about.html">About Me</a></li>
-                <li><a href="ined.html#portfolio">My Portfolio</a></li>
+                <li><a href="index.html#portfolio">My Portfolio</a></li>
                 <li><a href="code-examples.html">Coding Examples</a></li>
                 <li class="scs-scheme"><a href="scs.html">SCS Scheme</a></li>
                 <li class="contact-me"><a href="index.html#get-in-touch">Contact Me</a></li>
@@ -35,38 +37,58 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container"> 
         <div class="wrapper">
-        <div class="scheme">
-            <div class="scheme-intro">
-                <h1>SCS Scheme</h1>
-                <h2>Introdiuction to Scion Coalition Scheme</h2>
-                <p>The Scion Coalition Scheme is an intensive, specially tailored training program run by Netmatters in order to give willing candidates the opportunity to enter the industry as web developers. Under the supervision of senior web developers, scions generally aim to complete training within six to nine months. The course is intensive and therefore the level of learning achieved is extensive in a short space of time.</p>
-            </div>
-            <div class="scheme-treehouse">
-                <h2>Treehouse</h2>
-                <p>Treehouse is an online learning community, featuring videos covering a number of topics from basic HTML to C# programming, iOS development, data analysis, and more. By completing courses users can earn points, allowing them to track their progress and see how much they've covered in certain areas.</p>
-                <a href="https://teamtreehouse.com/profiles/kieronoates2" target="_blank">View Treehouse Profile <img src="img/treehouse.svg" alt=""></a>
-            </div>
-            <div class="scheme-about">
-                <h2>About Netmatters</h2>
-                <ul>
-                    <li>Established in 2008</li>
-                    <li>Norfolk's leading technology company</li>
-                    <li>Winner of the Princess Royal Training Award</li>
-                    <li>Winner of EDP Skills of Tomorrow Award</li>
-                    <li>80+ staff, 2 locations across Norfolk</li>
-                    <li>Digital Marketing, Website & Software development & IT Support</li>
-                    <li>Broad spectrum of clients, working nationwide</li>
-                    <li>Operate to strict company values</li>
-                </ul>
+            <h1>SCS Scheme</h1>
+            <div class="slick-slider">
+                <div class="scheme-intro slide">
+                    
+                    <h2>Introduction to Scion Coalition Scheme</h2>
+                    <p>The Scion Coalition Scheme is an intensive, specially tailored training program run by Netmatters in order to give willing candidates the opportunity to enter the industry as web developers. Under the supervision of senior web developers, scions generally aim to complete training within six to nine months. The course is intensive and therefore the level of learning achieved is extensive in a short space of time.</p>
+                </div>
+    
+                <div class="scheme-treehouse slide">
+                    <h2>Treehouse</h2>
+                    <p>Treehouse is an online learning community, featuring videos covering a number of topics from basic HTML to C# programming, iOS development, data analysis, and more. By completing courses users can earn points, allowing them to track their progress and see how much they've covered in certain areas.</p>
+                    <a href="https://teamtreehouse.com/profiles/kieronoates2" target="_blank">View Treehouse Profile <img src="img/treehouse.svg" alt="Treehouse Logo"></a>
+                </div>
+    
+                <div class="scheme-about slide">
+                    <h2>About Netmatters</h2>
+                    <ul>
+                        <li>Established in 2008</li>
+                        <li>Norfolk's leading technology company</li>
+                        <li>Winner of the Princess Royal Training Award</li>
+                        <li>Winner of EDP Skills of Tomorrow Award</li>
+                        <li>80+ staff, 2 locations across Norfolk</li>
+                        <li>Digital Marketing, Website & Software development & IT Support</li>
+                        <li>Broad spectrum of clients, working nationwide</li>
+                        <li>Operate to strict company values</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 </body>
 <script src="js/jquery-3.7.1.min.js"></script>
+<script type="text/javascript" src="js/slick/slick.min.js"></script>
+<script>
+    $(document).ready(function(){
+    $('.slick-slider').slick({
+        infinite: true,            // Loop through slides
+        slidesToShow: 1,           // Show one slide at a time
+        slidesToScroll: 1,         // Scroll one slide at a time
+        vertical: false,            // Enable vertical sliding
+        arrows: false,              // Show navigation arrows
+        dots: true,                // Show pagination dots
+        autoplay: false,            // Enable autoplay      
+        speed: 700,                // Transition speed between slides
+        adaptiveHeight: true,      // Adjust height based on slide content
+    });
+});
+</script>
 <script src="js/main.js"></script>
-<footer>
+<footer style="position: absolute; width: calc(100vw - 200px); margin-left: 200px;">
     <p>Kieron Oates &copy; 2024</p>
 </footer>
 </div>

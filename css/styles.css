@@ -159,24 +159,35 @@ footer {
   font-size: 1.2em;
 }
 
-[class^=scheme-] {
-  border-bottom: 10px dashed rgb(55, 61, 67);
-}
-
 .scheme-about {
   border-bottom: none;
 }
 
-@media (min-width: 768px) {
-  [class^=scheme] h1, [class^=scheme] h2 {
-    text-align: left;
-  }
+.scheme img {
+  vertical-align: middle;
+  width: 1em;
+  height: 1em;
 }
-@media (min-width: 1200px) {
-  .scheme-about {
-    border-bottom: 10px dashed rgb(55, 61, 67);
-  }
+
+/* Style for individual dots */
+.slick-dots li {
+  list-style: none;
 }
+
+.slick-dots li button {
+  width: 12px;
+  height: 12px;
+  background-color: #ccc; /* Inactive dot color */
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.slick-dots li.slick-active button {
+  background-color: #333; /* Active dot color */
+}
+
 .navbar {
   background-color: rgb(55, 61, 67);
   margin-top: -20px;
