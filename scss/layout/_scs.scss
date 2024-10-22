@@ -10,6 +10,7 @@
 
     h2 {
         text-align: center;
+        margin-top: 0;
     }
     a {
         text-decoration: none;
@@ -40,15 +41,18 @@
     height: 1em;
 }
 
-
+.slide {
+    margin-right: 50px;
+    margin-left: 50px;
+}
 //dot styling
 .slick-dots li {
     list-style: none;
 }
 
 .slick-dots li button {
-    width: 12px;
-    height: 12px;
+    width: 15px;
+    height: 15px;
     background-color: #ccc; 
     border-radius: 50%;
     border: none;
@@ -57,13 +61,38 @@
 }
 
 .slick-dots li.slick-active button {
-    background-color: #333; 
+    background-color: #333;
+     
 }
 @include mq ('m') {
+    .scs-scheme-header {
+        font-size: 40px;
+        padding-top: 20px;
+        padding-bottom: 100px;
+        text-align: center;
+    }
+    [class^="scheme"] {
+        h2 {
+            font-size: 2em;
+        }
+        p {
+            font-size: 1.5em;
+            
+        }
+    }
+    .slide {
+        margin-right: 150px;
+        margin-left: 150px;
+        border: 10px dashed $color-secondary;
+        padding: 40px;
+    }
     .net-list {
         list-style: none;
         text-align: center;
         padding-left: 0;
+        li {
+            font-size: 1.5em;
+        }
     }
     .scs-footer {
         position: absolute; 

@@ -140,6 +140,7 @@ footer {
 }
 [class^=scheme] h2 {
   text-align: center;
+  margin-top: 0;
 }
 [class^=scheme] a {
   text-decoration: none;
@@ -170,13 +171,18 @@ footer {
   height: 1em;
 }
 
+.slide {
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
 .slick-dots li {
   list-style: none;
 }
 
 .slick-dots li button {
-  width: 12px;
-  height: 12px;
+  width: 15px;
+  height: 15px;
   background-color: #ccc;
   border-radius: 50%;
   border: none;
@@ -189,10 +195,31 @@ footer {
 }
 
 @media (min-width: 768px) {
+  .scs-scheme-header {
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    text-align: center;
+  }
+  [class^=scheme] h2 {
+    font-size: 2em;
+  }
+  [class^=scheme] p {
+    font-size: 1.5em;
+  }
+  .slide {
+    margin-right: 150px;
+    margin-left: 150px;
+    border: 10px dashed rgb(55, 61, 67);
+    padding: 40px;
+  }
   .net-list {
     list-style: none;
     text-align: center;
     padding-left: 0;
+  }
+  .net-list li {
+    font-size: 1.5em;
   }
   .scs-footer {
     position: absolute;
