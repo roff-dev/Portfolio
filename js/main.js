@@ -27,15 +27,18 @@ var typed = new Typed("#typed", {
 
 
 //flip function
+
 $(document).ready(function() {
     $('.card').flip({
-        trigger: 'manual' ,
-        speed: 700, 
+        trigger: 'manual',
+        speed: 700,
         easing: 'ease-in-out',
     });
 
-    $('.card').on('click', function(event) {
-        
+    // Handle click and touch events
+    $('.card').on('click touchstart', function(event) {
+        event.stopPropagation(); // Prevents touch issues in iOS Safari
+
         if (!$(this).data('flipped')) {
             $(this).flip(true); 
             $(this).data('flipped', true);
@@ -45,6 +48,26 @@ $(document).ready(function() {
         }
     });
 });
+
+
+// $(document).ready(function() {
+//     $('.card').flip({
+//         trigger: 'manual' ,
+//         speed: 700, 
+//         easing: 'ease-in-out',
+//     });
+
+//     $('.card').on('click', function(event) {
+        
+//         if (!$(this).data('flipped')) {
+//             $(this).flip(true); 
+//             $(this).data('flipped', true);
+//         } else {
+//             $(this).flip(false); 
+//             $(this).data('flipped', false); 
+//         }
+//     });
+// });
 // load dom
 document.addEventListener("DOMContentLoaded", function() {
     const form = document.querySelector('form');

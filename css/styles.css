@@ -435,6 +435,8 @@ section {
   max-width: 400px;
   min-width: 300px;
   min-height: 450px;
+  perspective: 1000px; /* Ensure perspective is properly set */
+  -webkit-perspective: 1000px; /* Safari-specific */
 }
 .card:hover {
   transform: translateY(-8px);
@@ -448,7 +450,11 @@ section {
   padding: 10px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
+  backface-visibility: hidden; /* Ensure backface is hidden */
+  -webkit-backface-visibility: hidden; /* Safari-specific */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform; /* Force hardware acceleration */
+  transform-style: preserve-3d; /* Ensure proper 3D transform */
 }
 .card .front img, .card .back img {
   max-width: 100%;
@@ -478,7 +484,16 @@ section {
 .card .front a:hover, .card .back a:hover {
   background-color: #0056b3;
 }
+.card .back {
+  transform: rotateY(180deg); /* Flip the back 180 degrees */
+}
 
+/* Safari-specific styling to handle iOS quirks */
+@supports (-webkit-touch-callout: none) {
+  .card .front, .card .back {
+    transform: rotateY(180deg); /* Safari-specific fix */
+  }
+}
 @media (min-width: 1200px) {
   .card {
     max-width: 550px;
