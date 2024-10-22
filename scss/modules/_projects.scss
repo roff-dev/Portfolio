@@ -41,7 +41,13 @@
         text-align: center;
         flex-grow: 0;
     }
-
+    h4 {
+      margin-bottom: 0;
+      text-align: center;
+      span {
+        font-weight: 400;
+      }
+    }
     a {
         text-decoration: none;
         padding: 5px 10px;
@@ -59,6 +65,13 @@
       }
     } 
   }
+  .skills-req {
+    list-style-type: none; 
+    padding: 10px 0 10px;           
+    margin: 0; 
+    text-align: center;           
+}
+
 @include mq('xl'){
   .card {
     max-width: 550px;

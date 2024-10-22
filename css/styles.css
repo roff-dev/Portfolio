@@ -464,6 +464,13 @@ section {
   text-align: center;
   flex-grow: 0;
 }
+.card .front h4, .card .back h4 {
+  margin-bottom: 0;
+  text-align: center;
+}
+.card .front h4 span, .card .back h4 span {
+  font-weight: 400;
+}
 .card .front a, .card .back a {
   text-decoration: none;
   padding: 5px 10px;
@@ -477,6 +484,13 @@ section {
 }
 .card .front a:hover, .card .back a:hover {
   background-color: #0056b3;
+}
+
+.skills-req {
+  list-style-type: none;
+  padding: 10px 0 10px;
+  margin: 0;
+  text-align: center;
 }
 
 @media (min-width: 1200px) {
