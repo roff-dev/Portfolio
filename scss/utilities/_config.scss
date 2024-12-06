@@ -39,6 +39,9 @@ $gradient-top-left: linear-gradient(225deg, #49464fff, #373d43ff, #3c4f58ff, #56
 $gradient-bottom-left: linear-gradient(315deg, #49464fff, #373d43ff, #3c4f58ff, #565e64ff);
 $gradient-radial: radial-gradient(#49464fff, #373d43ff, #3c4f58ff, #565e64ff);
 
-$color-primary: $davys-gray;
-$color-secondary: $onyx;
-$color-accent: $charcoal;
+// $color-primary: $davys-gray;
+$color-primary: #181818;
+// $color-secondary: $onyx;
+$color-secondary: lighten(#181818, 3);
+// $color-accent: $charcoal;
+$color-accent: lighten(#181818, 10);

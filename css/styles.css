@@ -17,7 +17,7 @@ html {
 body {
   font-family: "DM Mono", monospace;
   color: white;
-  background-color: rgb(73, 70, 79);
+  background-color: #181818;
   margin: 0;
 }
 
@@ -45,7 +45,7 @@ body {
 footer {
   text-align: center;
   padding: 20px;
-  background-color: rgb(55, 61, 67);
+  background-color: #202020;
   color: white;
   bottom: 0;
   width: 100%;
@@ -85,7 +85,7 @@ footer {
   max-width: 100%;
   height: auto;
   border-radius: 50%;
-  border: 10px dashed rgb(55, 61, 67);
+  border: 10px dashed #202020;
 }
 .aboutme .description p {
   margin: 5px 0;
@@ -104,7 +104,7 @@ footer {
   flex: 1;
   margin: 0 10px;
   padding: 20px;
-  border: 10px dashed rgb(55, 61, 67);
+  border: 10px dashed #202020;
 }
 
 .skills h2, .hobbies h2 {
@@ -211,7 +211,7 @@ footer {
   .slide {
     margin-right: 150px;
     margin-left: 150px;
-    border: 10px dashed rgb(55, 61, 67);
+    border: 10px dashed #202020;
     padding: 40px;
   }
   .net-list {
@@ -242,6 +242,7 @@ footer {
 
 .all-snippets {
   padding: 0 50px;
+  display: none;
 }
 
 .snippet {
@@ -257,7 +258,7 @@ footer {
 
 .snippet-description {
   display: inline;
-  background-color: rgb(55, 61, 67);
+  background-color: #202020;
   border-radius: 10px;
   border: 6px solid #bababa;
 }
@@ -277,6 +278,36 @@ footer {
   padding-right: 20px;
 }
 
+.snippet-mobile-text {
+  padding: 0 50px;
+  text-align: center;
+}
+.snippet-mobile-text h3 {
+  margin-top: 3px;
+}
+.snippet-mobile-text p {
+  margin-bottom: 35px;
+}
+
+.snippet-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.snippet-mobile-image img {
+  max-width: 250px;
+  border-radius: 10px;
+}
+
+@media (min-width: 576px) {
+  .all-snippets {
+    display: block;
+  }
+  .all-snippets-mobile {
+    display: none;
+  }
+}
 @media (min-width: 992px) {
   .all-snippets {
     padding: 0 200px;
@@ -295,7 +326,7 @@ footer {
   }
 }
 .navbar {
-  background-color: rgb(55, 61, 67);
+  background-color: #202020;
   margin-top: -20px;
 }
 
@@ -397,7 +428,7 @@ footer {
   .navbar {
     width: 200px;
     height: 100vh;
-    background-color: rgb(55, 61, 67);
+    background-color: #202020;
     float: left;
     position: fixed;
     z-index: 2;
@@ -435,10 +466,10 @@ footer {
     padding-top: 25px;
     padding-bottom: 25px;
     font-size: 2em;
-    border-top: 10px dashed rgb(73, 70, 79);
+    border-top: 10px dashed #181818;
   }
   .nav-links ul:first-child {
-    border-top: 10px dashed rgb(73, 70, 79);
+    border-top: 10px dashed #181818;
     padding-top: 20px;
   }
   .nav-links li a, .nav-logo li a {
@@ -453,12 +484,12 @@ footer {
     width: 100%;
   }
   .nav-links li a:hover {
-    background-color: rgb(60, 79, 88);
+    background-color: #323232;
     color: white;
   }
   .scs-scheme {
     padding-bottom: 20px;
-    border-bottom: 10px dashed rgb(73, 70, 79);
+    border-bottom: 10px dashed #181818;
   }
   .contact-me {
     padding-top: 20px;
@@ -561,7 +592,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(55, 61, 67);
+  background-color: #202020;
   padding: 10px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
@@ -657,7 +688,7 @@ input, textarea {
   margin: 5px 0;
   border: 1px solid #ccc;
   border-radius: 4px;
-  background-color: rgb(55, 61, 67);
+  background-color: #202020;
 }
 
 input::placeholder, textarea::placeholder {
